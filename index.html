@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpCastTV — Painel OOH / Digital Signage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">📺</span>
+            <span class="logo-text">CorpCastTV</span>
+        </div>
+
+        <nav class="menu">
+            <a href="#" class="menu-item active">
+                <span>📊</span> Painel
+            </a>
+            <a href="#" class="menu-item">
+                <span>📢</span> Anúncios & Filas
+            </a>
+            <a href="#" class="menu-item">
+                <span>🕓</span> Histórico (Logs)
+            </a>
+            <a href="#" class="menu-item">
+                <span>🏢</span> Empresas & TVs
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Status da Rede</p>
+            <p class="status-online"><span class="dot"></span> 3 Online</p>
+        </div>
+    </aside>
+
+    <!-- ============ CONTEÚDO PRINCIPAL ============ -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <h1>TVs em Exibição</h1>
+                <p class="subtitle">Monitoramento simultâneo do canal corporativo e fila atual de mídias.</p>
+            </div>
+            <button class="btn-primary" id="btnNovoAnuncio">+ Novo Anúncio</button>
+        </header>
+
+        <!-- INDICADORES -->
+        <section class="stats">
+            <div class="stat-card">
+                <p class="stat-label">Total de TVs</p>
+                <p class="stat-value">3 <span class="stat-unit">Dispositivos</span></p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Exibições Hoje</p>
+                <p class="stat-value">224</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Anúncios na Fila</p>
+                <p class="stat-value">12</p>
+            </div>
+            <div class="stat-card">
+                <p class="stat-label">Empresas Ativas</p>
+                <p class="stat-value">4</p>
+            </div>
+        </section>
+
+        <!-- CARDS DAS TVs -->
+        <section class="tvs">
+            <h2>TVs em Exibição (Ao Vivo)</h2>
+
+            <div class="tv-grid">
+
+                <!-- TV #01 -->
+                <div class="tv-card live">
+                    <div class="tv-header">
+                        <span class="tv-id">📺 TV #01</span>
+                        <span class="badge-live">LIVE</span>
+                    </div>
+                    <p class="tv-location">Recepção HQ (Andar Térreo)</p>
+                    <div class="tv-content">
+                        <p class="tv-company">Beta Analytics</p>
+                        <p class="tv-ad-title">Plataforma PowerBI Enterprise</p>
+                        <p class="tv-ad-desc">"Transforme dados brutos em inteligência comercial em segundos."</p>
+                    </div>
+                    <div class="tv-footer">
+                        <span>Tempo Restante: <strong>00:13s</strong></span>
+                        <span>Próximo: Mega Store Brasil</span>
+                    </div>
+                </div>
+
+                <!-- TV #02 -->
+                <div class="tv-card">
+                    <div class="tv-header">
+                        <span class="tv-id">📺 TV #02</span>
+                        <span class="badge-online">ONLINE</span>
+                    </div>
+                    <p class="tv-location">Refeitório & Convivência</p>
+                    <div class="tv-content">
+                        <p class="tv-company">Mega Store Brasil</p>
+                        <p class="tv-ad-title">Cardápio Especial do Mês</p>
+                        <p class="tv-ad-desc">"Novidades e combos especiais para a equipe."</p>
+                    </div>
+                    <div class="tv-footer">
+                        <span>Tempo Restante: <strong>00:22s</strong></span>
+                        <span>Próximo: Alpha Tech</span>
+                    </div>
+                </div>
+
+                <!-- TV #03 -->
+                <div class="tv-card">
+                    <div class="tv-header">
+                        <span class="tv-id">📺 TV #03</span>
+                        <span class="badge-online">ONLINE</span>
+                    </div>
+                    <p class="tv-location">Filial São Paulo (Lobby)</p>
+                    <div class="tv-content">
+                        <p class="tv-company">Beta Analytics</p>
+                        <p class="tv-ad-title">Treinamento de Segurança Cibernética</p>
+                        <p class="tv-ad-desc">"Capacite sua equipe contra ameaças digitais."</p>
+                    </div>
+                    <div class="tv-footer">
+                        <span>Tempo Restante: <strong>00:08s</strong></span>
+                        <span>Próximo: Inova Health</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FILA DE ANÚNCIOS -->
+        <section class="fila">
+            <h2>Fila da TV #01 — Recepção HQ</h2>
+
+            <div class="playlist">
+
+                <div class="playlist-item done">
+                    <span class="playlist-status">🟢</span>
+                    <div>
+                        <p class="playlist-company">Alpha Tech</p>
+                        <p class="playlist-title">Lançamento Smartphone X</p>
+                        <p class="playlist-desc">Inovação e alto desempenho para sua empresa. Descubra a linha 2026.</p>
+                    </div>
+                    <span class="playlist-meta">15s • Já passou (43x)</span>
+                </div>
+
+                <div class="playlist-item playing">
+                    <span class="playlist-status">🔵</span>
+                    <div>
+                        <p class="playlist-company">Beta Analytics</p>
+                        <p class="playlist-title">Plataforma PowerBI Enterprise</p>
+                        <p class="playlist-desc">Transforme dados brutos em inteligência comercial em segundos.</p>
+                    </div>
+                    <span class="playlist-meta">20s • Em exibição</span>
+                </div>
+
+                <div class="playlist-item queued">
+                    <span class="playlist-status">🟡</span>
+                    <div>
+                        <p class="playlist-company">Mega Store Brasil</p>
+                        <p class="playlist-title">Ofertas da Semana no E-commerce</p>
+                        <p class="playlist-desc">Descontos de até 40% em suprimentos corporativos e TI.</p>
+                    </div>
+                    <span class="playlist-meta">10s • Na fila (#3)</span>
+                </div>
+
+                <div class="playlist-item done">
+                    <span class="playlist-status">🟢</span>
+                    <div>
+                        <p class="playlist-company">Inova Health</p>
+                        <p class="playlist-title">Programa Vida Saudável no Trabalho</p>
+                        <p class="playlist-desc">Dicas de ergonomia e incentivo a exercícios para equipes.</p>
+                    </div>
+                    <span class="playlist-meta">15s • Já passou (50x)</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EMPRESAS -->
+        <section class="empresas">
+            <h2>Empresas Cadastradas</h2>
+
+            <div class="empresa-grid">
+
+                <div class="empresa-card">
+                    <p class="empresa-nome">Alpha Tech</p>
+                    <p class="empresa-cnpj">CNPJ: 12.345.678/0001-90</p>
+                    <p class="empresa-plano vip">Plano: VIP Continuous</p>
+                </div>
+
+                <div class="empresa-card">
+                    <p class="empresa-nome">Beta Analytics</p>
+                    <p class="empresa-cnpj">CNPJ: 98.765.432/0001-10</p>
+                    <p class="empresa-plano premium">Plano: Premium</p>
+                </div>
+
+                <div class="empresa-card">
+                    <p class="empresa-nome">Mega Store Brasil</p>
+                    <p class="empresa-cnpj">CNPJ: 45.112.334/0001-55</p>
+                    <p class="empresa-plano standard">Plano: Standard</p>
+                </div>
+
+                <div class="empresa-card">
+                    <p class="empresa-nome">Inova Health</p>
+                    <p class="empresa-cnpj">CNPJ: 33.998.112/0001-88</p>
+                    <p class="empresa-plano premium">Plano: Premium</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER AWS -->
+        <footer class="footer">
+            <p>Assets hospedados em <strong>Amazon S3</strong> · Aplicação servida por <strong>Apache (EC2)</strong></p>
+        </footer>
+
+    </main>
+
+    <!-- ============ MODAL NOVO ANÚNCIO ============ -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <h3>Adicionar Anúncio à Fila</h3>
+
+            <label>Empresa Anunciante</label>
+            <select>
+                <option>Alpha Tech</option>
+                <option>Beta Analytics</option>
+                <option>Mega Store Brasil</option>
+                <option>Inova Health</option>
+            </select>
+
+            <label>Título do Anúncio</label>
+            <input type="text" placeholder="Ex: Promoção de Verão 2026">
+
+            <label>Duração (segundos)</label>
+            <input type="number" value="15">
+
+            <div class="modal-actions">
+                <button class="btn-secondary" id="btnCancelar">Cancelar</button>
+                <button class="btn-primary">Inserir na Fila</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
